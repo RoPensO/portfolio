@@ -24,26 +24,33 @@ html {
 
 
 /* inicio menu */
-.menu-topo {
+.menu {
     width: 100%;
     height: 60px;
     margin-bottom: 60px;
     background-color: var(--cor_principal);
 }
-.menu-topo nav {
-    width: 700px;
-    margin: auto;
+.menu-topo {
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
-.menu-topo nav a, .menu-topo nav div {
-    margin: 20px 10px;
+.menu-topo nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-topo nav a, .menu-topo div {
+    margin: 0 10px;
     color: white;
     text-decoration: none;
 }
 .logo {
-    padding: 10px 10px;
-    border-radius: 6px;
+    padding: 20px 30px;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
     background-color: var(--cor_logo);
     box-shadow: 0px 2px 5px grey;
 }
@@ -126,13 +133,12 @@ html {
 }
 .portfolio h2 {
     text-transform: uppercase;
-    margin-bottom: 15px;
-}
-.portfolio p {
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 
 .cards {
+    max-width: 1024px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -154,7 +160,6 @@ html {
 /* começo sobre */
 .sobre {
     position: relative;
-    left: 10px;
     bottom: 30px;
     display: flex;
     justify-content: center;
@@ -186,6 +191,9 @@ footer {
     background-color: rgb(240, 240, 240);
     height: 200px;
 }
+footer > .logo {
+    font-size: 15px;
+}
 footer h3 {
     font-size: 18px;
     margin: 15px 0;
@@ -197,4 +205,50 @@ footer h3 a {
 }
 .social a img {
     margin: 0 10px;    
+}
+
+@media (max-width: 768px) {
+    .topo {
+    bottom: 50px;
+    }
+    .esquerda img {
+        width: 90%;
+    }
+    .card {
+        margin: 15px;
+    }
+    footer {
+        height: 150px;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-topo nav {
+        display: none;
+    }
+    .esquerda img {
+        display: none;
+    }
+    .portfolio {
+        height: auto;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre img {
+        margin-top: 0px;
+    }
+    .sobre-descricao {
+        width: auto;
+        margin: 70px 40px 0;
+        text-align: center;
+    }
 }
