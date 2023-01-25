@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+    --cor_principal: #023047;
+    --cor_botao: #8ECAE6;
+    --cor_logo: #FFB703;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 80px;
+
+}
+.limitador {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+/* inicio menu */
+.menu-topo {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 60px;
+    background-color: var(--cor_principal);
+}
+.menu-topo nav {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-topo nav a, .menu-topo nav div {
+    margin: 20px 10px;
+    color: white;
+    text-decoration: none;
+}
+.logo {
+    padding: 10px 10px;
+    border-radius: 6px;
+    background-color: var(--cor_logo);
+    box-shadow: 0px 2px 5px grey;
+}
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+.menu-topo nav div a {
+    font-size: 22px;
+    color: black;
+}
+
+
+/* começo header */
+.header {
+    max-width: 1024px;
+    margin-bottom: 100px;
+}
+.header, .botoes {
+    display: flex;
+}
+.direita, .esquerda {
+    width: calc(100%/1.5);
+}
+.direita {
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.direita h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.direita p {
+    margin-bottom: 40px;
+    width: calc(100%/1.4);
+}
+.topo {
+    position: relative;
+    left: 30px;
+}
+
+.botoes button {
+    padding: 10px 30px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+}
+.botoes button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.btn-portfolio {
+    background: var(--cor_principal);
+}
+.btn-contato {
+    background: var(--cor_botao);
+}
+
+.esquerda img {
+    rotate: 15deg;
+    border: 5px solid white;
+    box-shadow: 2px 5px 10px rgb(190, 190, 190);
+    position: relative;
+    top: 40px;
+    z-index: 1;
+}
+
+
+/* começo portfolio */
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    height: 450px;
+    position: relative;
+    bottom: 80px;
+}
+.portfolio h2 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.portfolio p {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    margin: 0 50px;
+    border: 10px solid white;
+    box-shadow: 2px 5px 10px rgb(190, 190, 190);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+/* começo sobre */
+.sobre {
+    position: relative;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+}
+.sobre img {
+    box-shadow: 2px 5px 10px lightgrey;
+    border: 5px solid white;
+    rotate: -15deg;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+.sobre-descricao {
+    width: calc(100%/3);
+    margin-left: 50px;
+}
+
+
+/* começo footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    height: 200px;
+}
+footer h3 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+footer h3 a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.social a img {
+    margin: 0 10px;    
+}
