@@ -175,6 +175,7 @@ html {
 .sobre-descricao {
     width: calc(100%/3);
     margin-left: 60px;
+    font-size: 18px;
 }
 .sobre-descricao p {
     font-size: 16px;
@@ -230,6 +231,10 @@ footer h3 a {
     .menu-topo nav {
         display: none;
     }
+    .direita p, .direita h1 {
+        width: 100%;
+        text-align: center;
+    }
     .esquerda img {
         display: none;
     }
@@ -238,6 +243,10 @@ footer h3 a {
     }
     .cards {
         flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .card3 {
+        display: none;
     }
     .sobre {
         flex-direction: column;
@@ -251,5 +260,5 @@ footer h3 a {
         margin: 70px 40px 0;
         text-align: center;
     }
-    
+
 }
