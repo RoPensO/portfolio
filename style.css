@@ -69,7 +69,7 @@ html {
     max-width: 1024px;
     margin-bottom: 100px;
 }
-.header, .botoes {
+.header {
     display: flex;
 }
 .direita, .esquerda {
@@ -92,6 +92,10 @@ html {
     left: 30px;
 }
 
+.botoes {
+    display: flex;
+    justify-content: center;
+}
 .botoes button {
     padding: 10px 30px;
     margin-right: 20px;
