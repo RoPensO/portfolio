@@ -135,6 +135,7 @@ html {
 .cards {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 .card {
     margin: 0 50px;
@@ -142,13 +143,19 @@ html {
     box-shadow: 2px 5px 10px rgb(190, 190, 190);
     border-radius: 5px;
     background-color: #fff;
+    width: 220px;
+    height: 300px;
+}
+.card h3 {
+    margin: 5px auto;
 }
 
 
 /* começo sobre */
 .sobre {
     position: relative;
-    left: 20px;
+    left: 10px;
+    bottom: 30px;
     display: flex;
     justify-content: center;
 }
@@ -158,11 +165,15 @@ html {
     rotate: -15deg;
     position: relative;
     top: 20px;
-    left: 15px;
+    height: 200px;
 }
 .sobre-descricao {
     width: calc(100%/3);
-    margin-left: 50px;
+    margin-left: 60px;
+}
+.sobre-descricao p {
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 
