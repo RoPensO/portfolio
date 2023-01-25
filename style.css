@@ -135,6 +135,9 @@ html {
     text-transform: uppercase;
     margin: 20px 0;
 }
+.portfolio p {
+    text-align: center;
+}
 
 .cards {
     max-width: 1024px;
@@ -231,15 +234,21 @@ footer h3 a {
     .menu-topo nav {
         display: none;
     }
+    .direita {
+        margin-left: 40px;
+    }
     .direita p, .direita h1 {
         width: 100%;
         text-align: center;
     }
-    .esquerda img {
+    .esquerda {
         display: none;
     }
     .portfolio {
         height: auto;
+    }
+    .portfolio p {
+        margin: 0 10px;
     }
     .cards {
         flex-direction: column;
@@ -260,5 +269,4 @@ footer h3 a {
         margin: 70px 40px 0;
         text-align: center;
     }
-
 }
