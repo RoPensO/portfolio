@@ -159,6 +159,10 @@ html {
     width: 220px;
     height: 300px;
 }
+.card a {
+    text-decoration: none;
+    color: black;
+}
 .card h3 {
     margin: 5px auto;
 }
