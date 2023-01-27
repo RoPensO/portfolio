@@ -76,6 +76,8 @@ html {
     width: calc(100%/1.5);
 }
 .direita {
+    display: flex;
+    flex-direction: column;
     margin-left: 30px;
     margin-top: 50px;
 }
@@ -94,7 +96,7 @@ html {
 
 .botoes {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .botoes button {
     padding: 10px 30px;
@@ -243,11 +245,14 @@ footer h3 a {
         display: none;
     }
     .direita {
-        margin-left: 40px;
+        justify-content: flex-start;
     }
     .direita p, .direita h1 {
         width: 100%;
         text-align: center;
+    }
+    .botoes {
+        justify-content: center;
     }
     .esquerda {
         display: none;
