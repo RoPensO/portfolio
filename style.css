@@ -100,7 +100,6 @@ html {
 }
 .botoes button {
     padding: 10px 30px;
-    margin-right: 20px;
     border: none;
     border-radius: 10px;
 }
@@ -111,6 +110,7 @@ html {
 }
 .btn-portfolio {
     background: var(--cor_principal);
+    margin-right: 20px;
 }
 .btn-contato {
     background: var(--cor_botao);
